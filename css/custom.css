@@ -1,0 +1,277 @@
+p {
+  margin: 0px;
+}
+
+/* Background Colors */
+
+::selection {
+  background: #007b87; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #007b87; /* Gecko Browsers */
+}
+
+/* Background Colors */
+.bg-light-brown {
+  background-color: #6e0d25;
+}
+
+.bg-black {
+  background-color: #011627;
+}
+
+.bg-olive {
+  background-color: #313715;
+}
+
+.bg-orange {
+  background-color: #fa9f42;
+}
+
+.bg-sea {
+  background-color: #eeffee;
+}
+
+.bg-light-gray {
+  background-color: #eeffeea8;
+}
+
+.bg-light-blue {
+  background-color: #00b7c7;
+}
+/* Text Colors */
+.text-light-brown {
+  color: #6e0d25;
+}
+
+.text-black {
+  color: #011627;
+}
+
+.text-olive {
+  color: #313715;
+}
+
+.text-orange {
+  color: #fa9f42;
+}
+.text-sea {
+  color: #eeffee;
+}
+
+.text-light-gray {
+  background-color: #eeffeea8;
+}
+
+.text-light-blue {
+  color: #00b7c7;
+}
+
+p {
+  font-size: 14pt;
+}
+
+.print-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.small {
+  font-size: 9pt;
+}
+
+.form-text {
+  font-size: 12pt;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.url_link:hover {
+  color: #00b7c7;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-text {
+  font-size: 14pt;
+  margin-bottom: 0px;
+}
+
+/* Slider */
+.slider-container {
+  max-height: 90vh;
+}
+
+.slider-img {
+  border-radius: 0px;
+}
+
+.slider-text {
+  filter: drop-shadow(3px 3px 5px #000000) drop-shadow(2px 2px 2px #50505000);
+}
+
+.text-small {
+  font-size: 12pt;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.start-now-btn {
+  width: 200px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.arrow-image {
+  width: 100px;
+}
+
+.bg-light-gray {
+  background-color: #edf2fb;
+}
+
+.product-box {
+  overflow: hidden;
+}
+
+.combi-shade-box {
+  background-image: url("../img/combi_shade.jpg");
+}
+
+.roller-shade-box {
+  background-image: url("../img/roller_shade.jpg");
+}
+
+.triple-shade-box {
+  background-image: url("../img/triple_shade.jpg");
+}
+
+.veilette-box {
+  background-image: url("../img/veilette.jpg");
+}
+
+.product-container {
+  padding: 75px;
+}
+
+.product-text-box {
+  height: 400px;
+  background-size: cover;
+  transition: all 1.5s ease-in-out;
+  opacity: 65%;
+}
+
+.product-text-box:hover {
+  transition: all 0.5s ease-in-out;
+  opacity: 100%;
+}
+
+/* .product-text-box:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1.5s ease-in-out;
+} */
+
+.how-to-buy-container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.arrow-icon {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+input[type="text"] {
+  border-radius: 0px;
+  border-color: darkgray;
+  border-width: 1px !important;
+  width: 100%;
+}
+input[type="email"] {
+  border-radius: 0px;
+  border-color: darkgray;
+  border-width: 1px !important;
+  width: 100%;
+}
+input[type="tel"] {
+  border-radius: 0px;
+  border-color: darkgray;
+  border-width: 1px !important;
+  width: 100%;
+}
+select {
+  border-radius: 0px;
+  border-color: darkgray;
+  border-width: 1px !important;
+  width: 100%;
+}
+textarea[type="text"] {
+  border-radius: 0px;
+  border-color: darkgray;
+  border-width: 1px !important;
+  width: 100%;
+  height: 150px;
+}
+
+.form-check-input {
+  border-color: black; /* added border-color to match with border color */
+  border-width: 1px !important;
+}
+
+.form-control {
+  border-color: black; /* added border-color to match with border color */
+  border-width: 1px !important;
+}
+
+.form-select {
+  border-color: black; /* added border-color to match with border color */
+  border-width: 1px !important;
+}
+
+.form-container {
+  height: 80vh;
+}
+
+.form-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.fabric-img-lg {
+  width: 600px;
+  height: auto;
+}
+
+img {
+  border-radius: 0px;
+}
+
+.child-safety-img {
+  border-radius: 0px;
+}
