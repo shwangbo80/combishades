@@ -90,29 +90,55 @@ include("./components/head.php");
                             <div class="col-md-6">
                                 <div class="row">
                                     <p class="col-4 form-text">Company:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_company"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_company"];
+                                        $_SESSION["shipping_company"] = $result["shipping_company"]; ?>
+                                    </p>
                                     <p class="col-4 form-text">Contact:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_contact_name"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_contact_name"];
+                                        $_SESSION["shipping_contact_name"] = $result["shipping_contact_name"]; ?>
+                                    </p>
                                     <p class="col-4 form-text">Address:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_street"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_street"];
+                                        $_SESSION["shipping_street"] = $result["shipping_street"]; ?></p>
                                     <p class="col-4 form-text">Unit:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_apt_no"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_apt_no"];
+                                        $_SESSION["shipping_apt_no"] = $result["shipping_apt_no"]; ?>
+                                    </p>
                                     <p class="col-4 form-text">City:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_city"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_city"];
+                                        $_SESSION["shipping_city"] = $result["shipping_city"]; ?></p>
                                     <p class="col-4 form-text">State:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_state"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_state"];
+                                        $_SESSION["shipping_state"] = $result["shipping_state"]; ?></p>
                                     <p class="col-4 form-text">Zip:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_zip"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_zip"];
+                                        $_SESSION["shipping_zip"] = $result["shipping_zip"]; ?></p>
                                     <p class="col-4 form-text">Phone:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_phone"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_phone"];
+                                        $_SESSION["shipping_phone"] = $result["shipping_phone"]; ?>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <p class="col-4 form-text">Email:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_email"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_email"];
+                                        $_SESSION["shipping_email"] = $result["shipping_email"]; ?>
+                                    </p>
                                     <p class="col-4 form-text">Fax:</p>
-                                    <p class="col-8 form-text"><?php echo $result["shipping_fax"] ?></p>
+                                    <p class="col-8 form-text">
+                                        <?php echo $result["shipping_fax"];
+                                        $_SESSION["shipping_fax"] = $result["shipping_fax"]; ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -149,40 +175,60 @@ include("./components/head.php");
                 ?>
                 <div class="row">
                     <p class="col-4 form-text">Company:</p>
-                    <p class="col-8 form-text"><?php echo $result['DealerName'] ?></p>
+                    <p class="col-8 form-text">
+                        <?php echo $result['DealerName'];
+                        $_SESSION["DealerName"] = $result["DealerName"]; ?>
+                    </p>
 
                     <p class="col-4 form-text">Contact:</p>
-                    <p class="col-8 form-text"><?php echo $result['contact'] ?></p>
+                    <p class="col-8 form-text">
+                        <?php echo $result['contact'];
+                        $_SESSION["contact"] = $result["contact"]; ?>
+                    </p>
 
                     <p class="col-4 form-text">Street:</p>
-                    <p class="col-8 form-text"><?php echo $result['street'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['street'];
+                        $_SESSION["street"] = $result["street"]; ?>
                     </p>
 
                     <p class="col-4 form-text">City:</p>
-                    <p class="col-8 form-text"><?php echo $result['city'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['city'];
+                        $_SESSION["city"] = $result["city"]; ?>
                     </p>
 
                     <p class="col-4 form-text">State:</p>
-                    <p class="col-8 form-text"><?php echo $result['state'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['state'];
+                        $_SESSION["state"] = $result["state"]; ?>
                     </p>
 
                     <p class="col-4 form-text">ZIP:</p>
-                    <p class="col-8 form-text"><?php echo $result['zip'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['zip'];
+                        $_SESSION["zip"] = $result["zip"]; ?>
                     </p>
                 </div>
             </div>
             <div class="col-6">
                 <div class="row">
                     <p class="col-4 form-text">Tel:</p>
-                    <p class="col-8 form-text"><?php echo $result['phone'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['phone'];
+                        $_SESSION["phone"] = $result["phone"]; ?>
                     </p>
 
                     <p class="col-4 form-text">Email:</p>
-                    <p class="col-8 form-text"><?php echo $result['DealerEmail'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['DealerEmail'];
+                        $_SESSION["DealerEmail"] = $result["DealerEmail"]; ?>
                     </p>
 
                     <p class="col-4 form-text">Fax:</p>
-                    <p class="col-8 form-text"><?php echo $result['fax'] ?>
+                    <p class="col-8 form-text">
+                        <?php echo $result['fax'];
+                        $_SESSION["fax"] = $result["fax"]; ?>
                     </p>
 
                 </div>
