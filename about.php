@@ -1,7 +1,6 @@
 <?php
 include("./components/head.php");
 ?>
-
 <body>
     <div>
         <?php
@@ -12,7 +11,7 @@ include("./components/head.php");
         <div class="my-5">
             <h1>ABOUT</h1>
             <hr>
-        </div>
+        </div>   
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 my-5">
@@ -27,20 +26,17 @@ include("./components/head.php");
                         <p>
                             Combi Shade<sup class="me-2">&reg;</sup>is the leading manufacturer of Combi Shade®
                             providing everything from innovative components to stylish fabrics worldwide.
-
                             Our fabrication warehouses are located in Southern California and South Korea, allowing us
                             to provide high quality Combi Shade<sup class="me-2">&reg;</sup> products to our customers.
-                            Our mission is to deliver quality products and outstanding service for Combi Shade<sup class="me-2">&reg;</sup> sun shading solutions to fabricators worldwide.
-
+                            Our mission is to deliver quality products and outstanding service for Combi Shade<sup class="me-2">&reg;</sup>
+                            sun shading solutions to fabricators worldwide.
                             Combi Shade<sup class="me-2">&reg;</sup>is currently looking for fabricators who offer Combi
                             Shade<sup class="me-2">&reg;</sup>products in USA and Canada.
-
                             We have developed a special program to
                             provide maximum profits while minimizing investments costs to aid in selling Combi Shade<sup class="me-2">&reg;</sup>products for fabricators.
-
                             If you have any questions, please don’t hesitate to contact us at
-                            <a href="mailto:support@combishades.com"">
-<span class=" fst-italic fw-bold">support@combishades.com</span>
+                            <a href="mailto:support@combishades.com">
+                                <span class=" fst-italic fw-bold">support@combishades.com</span>
                             </a>
                             <br>
                         </p>

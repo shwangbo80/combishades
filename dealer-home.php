@@ -7,9 +7,6 @@ if (!isset($_SESSION['id'])) {
 ?>
 <?php
 include("./components/head.php");
-echo '<pre>';
-print_r($_SESSION['dealerInfo']);
-echo '</pre>';
 ?>
 
 <body>
@@ -41,9 +38,6 @@ echo '</pre>';
                             <a class="text-light-blue" href="./reference_guide">
                                 <p class="url_link">ABBA Reference Guide</p>
                             </a>
-                            <!-- <a class="text-light-blue" href="./reference_guide_download">
-                            <p class="url_link">Download Link</p>
-                        </a> -->
                         </div>
                     </div>
                 </div>

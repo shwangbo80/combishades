@@ -30,47 +30,96 @@ require './db/config.php';
         require "./components/dealer-navbar.php"
         ?>
         <div class="container my-5">
-            <h2 class="fw-bold mt-5">
+            <h2 class="fw-bold mt-5 mb-0">
                 Order Review
             </h2>
-            <p>Please carefully review the order before submitting.</p>
-            <p class="fw-bold">Dealer Information</p>
-            <div class="row">
+            <p class="my-3">Please carefully review the order before submitting.</p>
+            <div class="row mb-5">
                 <div class="col-md-6">
-                    <p>Dealer Name</p>
+                    <p class="fw-bold">Dealer Information</p>
+                    <p><?php echo $_SESSION["dealerInfo"]["DealerName"] ?></p>
+                    <p>Contact: <?php echo $_SESSION["dealerInfo"]["contact"] ?></p>
+                    <p><?php echo $_SESSION["dealerInfo"]["street"] ?></p>
+                    <p><?php echo $_SESSION["dealerInfo"]["city"] ?>, <?php echo $_SESSION["dealerInfo"]["state"] ?></p>
+                    <p><?php echo $_SESSION["dealerInfo"]["zip"] ?></p>
+                    <p>Tel: <?php echo $_SESSION["dealerInfo"]["phone"] ?></p>
+                    <p>Fax: <?php echo $_SESSION["dealerInfo"]["fax"] ?></p>
                 </div>
                 <div class="col-md-6">
-                    <p>Delaer Email</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Street</p>
-                </div>
-                <div class="col-md-3">
-                    <p>City</p>
-                </div>
-                <div class="col-md-3">
-                    <p>State</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Zip</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Phone</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Contact</p>
+                    <p class="fw-bold">Shipping Information</p>
+                    <p><?php echo $_SESSION["shipping_company"] ?></p>
+                    <p><?php echo $_SESSION["shipping_contact_name"] ?></p>
+                    <p><?php echo $_SESSION["shipping_street"] ?></p>
+                    <p><?php echo $_SESSION["shipping_apt_no"] ?></p>
+                    <p><?php echo $_SESSION["shipping_city"] ?>, <?php echo $_SESSION["shipping_state"] ?></p>
+                    <p><?php echo $_SESSION["shipping_phone"] ?></p>
+                    <p><?php echo $_SESSION["shipping_fax"] ?></p>
                 </div>
             </div>
-            <p class="fw-bold">Shipping Information</p>
-            <p class="fw-bold">Order Information</p>
+            <div class="row border p-5">
+                <div>
+                    <p class="fw-bold">Order Information</p>
+                    <p><?php echo $_SESSION["sales_order_no"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["customer_po_no"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["side_mark"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["blind_type"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["entered_by"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["ship_via"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["line_no"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["room_id"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["qty"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["cassette_type"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["control_type"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["motor_yes_no"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["motor_remote"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["motor_channel"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["fabric_pattern"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["fabric_color"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["order_size_width"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["order_size_height"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["finished_size_width"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["finished_size_height"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["mount_options"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["control_options"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["cord"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["side_by_side"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["head_rail_color"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["fabric_cover"] ?></p>
+                    <hr class="my-3 text-secondary" />
+                    <p><?php echo $_SESSION["special_instruction"] ?></p>
+                </div>
+            </div>
+            <?php
+            // echo '<pre>';
+            // var_dump($_SESSION);
+            // echo '</pre>';
+            ?>
         </div>
-
-        <?php
-        echo '<pre>';
-        var_dump($_SESSION);
-        echo '</pre>';
-        ?>
-    </div>
     </div>
     <?php
     include("./components/footer.php");
@@ -83,51 +132,6 @@ include("./components/script.php");
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
     };
-
-    // const controlOption = document.getElementById("control-option");
-    // const motorizedControl = document.getElementsByClassName("motorized-control");
-    // const motorizedForm = document.getElementsByClassName("motorized-form");
-
-
-    // function get_fabric_pattern() {
-    //     d = document.getElementById("fabric_pattern").value;
-    //     console.log(d);
-    // }
-
-    // const hideMotorizedForm = () => {
-    //     for (let i = 0; i < motorizedForm.length; i++) {
-    //         motorizedForm[i].style.display = "none";
-    //     }
-    // }
-    // const showMotorizedForm = () => {
-    //     for (let i = 0; i < motorizedForm.length; i++) {
-    //         motorizedForm[i].style.display = "block";
-    //     }
-    // }
-
-    // const enableMotorizedForm = () => {
-    //     for (let i = 0; i < motorizedControl.length; i++) {
-    //         motorizedControl[i].disabled = false;
-    //         motorizedControl[i].style.opacity = 1;
-    //         showMotorizedForm();
-    //     }
-    // }
-    // const disalbleMotorizedForm = () => {
-    //     for (let i = 0; i < motorizedControl.length; i++) {
-    //         motorizedControl[i].disabled = true;
-    //         motorizedControl[i].style.opacity = 0.5;
-    //         hideMotorizedForm();
-    //     }
-    // }
-    // disalbleMotorizedForm()
-    // controlOption.addEventListener("change", (e) => {
-    //     if (controlOption.value === "cordless") {
-    //         disalbleMotorizedForm();
-    //     }
-    //     if (controlOption.value === "motorized") {
-    //         enableMotorizedForm();
-    //     }
-    // })
 </script>
 
 </html>
